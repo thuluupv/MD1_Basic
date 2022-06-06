@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>formdk</title>
+</head>
+<body>
+<h2>REGISTER</h2>
+<form method="post" action="https://localhost" enctype="multipart/form-data">
+    <label for="name">username</label>
+    <input type="text" name="fullname" id="name" required>
+    <br>
+
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required>
+    <br>
+<label for="phone">phonenumber</label>
+    <input type="text" id="phone" name="phone">
+<br>
+<label for="nam">Nam</label>
+<input type="radio" value="nam" name="gender" id="nam">
+<label for="nu">Nu</label>
+<input type="radio" value="nu" name="gender" id="nu">
+    <p>province</p>
+    <br>
+    <select>
+        <option value="HCM">Hồ Chí Minh</option>
+        <option value="HN">Hà Nội</option>
+    </select>
+<button type="submit">dang ky</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="showMessage()">cick vào đây</button>
+<script>
+function showMessage(){
+      alert('xin chào');
+    }
+
+</script>
+<div id="messageDiv"></div>
+<button type="button" onclick="showMessage()">Click Me!</button>
+<script>
+    function showMessage(){
+        document.getElementById('messageDiv').innerHTML = 'Xin chào!';
+    }
+</script>
+
+
+<div id="messageDive"></div>
+<button type="button" id="btn">Click me</button>
+<script>
+    document.getElementById("btn").addEventListener("click", showMessage);
+    function showMessage() {
+        document.getElementById("messageDive").innerHTML = 'hello';
+    }
+</script>
+<br>
+<button type="button" onclick="showMessage();">Click Me!</button>
+<script>
+    function showMessage() {
+        console.log('Xin chào!');
+    }
+</script>
+<br>
+<h1 id="id1">My Heading 1</h1>
+
+<button type="button"
+        onclick="document.getElementById('id1').style.color = 'red'">
+    Click Me!</button>
+<button type="button" onclick="showMessage();">Click Me!</button>
+<script>
+    <button type="button" onClick="showMessage();">Click Me!</button>
+</script>
+</body>
+</html>
