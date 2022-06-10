@@ -5,9 +5,81 @@
     <title>Title</title>
 </head>
 <body>
-<script src="baitapdemo.js">
+<img id='p1' onclick="change1()" src="../image/c1.jpg">
+<img id='p2' onclick="change2()" src="../image/c2.jpg">
+<img id='p3' onclick="change3()" src="../image/c3.jpg">
+<img id='p4' onclick="change4()" src="../image/c4.jpg">
+<img id='p5' onclick="change5()" src="../image/c5.jpg">
+<script>
+let i1=document.getElementById('p1')
+let i2=document.getElementById('p2')
+let i3=document.getElementById('p3')
+let i4=document.getElementById('p4')
+let i5=document.getElementById('p5')
 
+let count1 =0
+let count2= 0
+let count3= 0
+let count4= 0
+let count5= 0
+function change1() {
+    count1++
+    if (count1 == 1)
+        i1.src = '../image/h1.jpg'
+    else if (count1 == 2)
+        i1.src = '../image/m1.jpg'
+    else
+    {count1=0
+    i1.src = '../image/c1.jpg'}
+    if(count1==count2 && count2==count3  && count3==count4  && count4==count5 ) {alert('you win')}
+}
+    function change2(){
+    count2 ++
+    if (count2==1)
+        i2.src='../image/h2.jpg'
+    else if (count2==2)
+        i2.src='../image/m2.jpg'
+    else
+    {count2=0
+        i2.src = '../image/c2.jpg'}
+        if(count1==count2 && count2==count3  && count3==count4  && count4==count5 ) {alert('you win')}
+}
+function change3() {
+    count3++
+    if (count3 == 1)
+        i3.src = '../image/h3.jpg'
+    else if (count3 == 2)
+        i3.src = '../image/m3.jpg'
+    else {
+        count3 = 0
+        i3.src = '../image/c3.jpg'
+    }
+    if(count1==count2 && count2==count3  && count3==count4  && count4==count5 ) {alert('you win')}
+}
+
+function change4() {
+    count4++
+    if (count4 == 1)
+        i4.src = '../image/h4.jpg'
+    else if (count4 == 2)
+        i4.src = '../image/m4.jpg'
+    else {
+        count4 = 0
+        i4.src = '../image/c4.jpg'
+    }
+    if(count1==count2 && count2==count3  && count3==count4  && count4==count5 ) {alert('you win')}
+}function change5() {
+    count5++
+    if (count5 == 1)
+        i5.src = '../image/h5.jpg'
+    else if (count4 == 2)
+        i5.src = '../image/m5.jpg'
+    else {
+        count5 = 0
+        i5.src = '../image/c5.jpg'
+    }if(count1==count2 && count2==count3  && count3==count4  && count4==count5 ) {alert('you win')}
+}
+//if(count1==count2 && count2==count3  && count3==count4  && count4==count5 ) {alert('you win')}
 </script>
 </body>
 </html>
-origin master

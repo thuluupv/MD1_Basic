@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ibm_sorting</title>
+</head>
+<body>
+<script>
+    let weight= + prompt('nhập cân nặng tại đây');
+    let height= + prompt('nhập chiều cao tại đây');
+    let ibm=weight/(height*height)
+    if (ibm<18.5) {
+        alert('underweight')
+    }else{
+       if (ibm<25) {
+           alert('normal')
+       }else{
+           if(ibm <30) {
+               alert('overweight')
+           }else{
+               alert('obese')
+           }
+       }
+    }
+
+
+</script>
+
+</body>
+</html>
